@@ -11,8 +11,8 @@ import './index.css';
 // api call
 
 const App = () =>{
-  const [name , setName] = useState('')
-  const [kind , setKind] = useState('')
+   const [name , setName] = useState('')
+   const [kind , setKind] = useState('')
   const[pets , setPets] = useState([]);
   const [isNewPetOpen , setNewPetOpen] = useState(false)
   const [currentPet , setCurrentPet] = useState(null)

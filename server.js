@@ -41,6 +41,7 @@ server.use((req , res ,next) => {
 
 // Use Default router 
 server.use(router)
+
 server.listen(3001, () => {
     console.log('Pet Store is running')
 })
