@@ -150,3 +150,24 @@ select , option {
   margin: auto;
   margin-bottom: 10px;
 }
+
+/* Footer Styling  */
+
+.footer {
+  position: fixed;
+    height: 50px;
+    background-color: black;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+   
+}
+.footer-text {
+  display: block;
+  color: whitesmoke;
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+   padding: 10px;
+   font-size: 20px;
+}

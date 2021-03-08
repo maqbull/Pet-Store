@@ -7,12 +7,12 @@ const handleErrors = res => {
     return res;
 }
 export const listPets = () =>{
-  return fetch('http://localhost:3001/pets').then(
+  return fetch('https://rocky-hamlet-86164.herokuapp.com/pets').then(
       res => res.json())
 }
 
 export const createPet = (pet) =>{
-return fetch('http://localhost:3001/pets',{
+return fetch('https://rocky-hamlet-86164.herokuapp.com/pets',{
   method: 'POST', 
   headers: {
      'Content-Type': 'application/json' 
@@ -25,7 +25,7 @@ return fetch('http://localhost:3001/pets',{
 
 
 export const updatePet = (pet) =>{
-return fetch(`http://localhost:3001/pets/${pet.id}`,{
+return fetch(`https://rocky-hamlet-86164.herokuapp.com/pets/${pet.id}`,{
   method: 'PUT', 
   headers: {
      'Content-Type': 'application/json' 
@@ -38,7 +38,7 @@ return fetch(`http://localhost:3001/pets/${pet.id}`,{
 
 
 export const deletePet = pet =>{
-return fetch(`http://localhost:3001/pets/${pet.id}`,{
+return fetch(`https://rocky-hamlet-86164.herokuapp.com/pets/${pet.id}`,{
   method: 'DELETE', 
   
 })

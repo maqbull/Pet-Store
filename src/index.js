@@ -11,8 +11,7 @@ import './index.css';
 // api call
 
 const App = () =>{
-   const [name , setName] = useState('')
-   const [kind , setKind] = useState('')
+   
   const[pets , setPets] = useState([]);
   const [isNewPetOpen , setNewPetOpen] = useState(false)
   const [currentPet , setCurrentPet] = useState(null)
@@ -90,6 +89,9 @@ const savePet = async pet => {
     ))}
     </ul>
     <button className="add-a-pet" onClick = {() => setNewPetOpen(true)}> Add a pet </button>
+    <footer className = "footer">
+    <p class="footer-text">Copyright @2021 | Designed With ❤❤ by <a href="https://www.linkedin.com/in/mohd-maqbool-82a697142/">Mohd Maqbool</a></p>
+    </footer>
     </>
     )}
   { isNewPetOpen && (<NewPetModal 
@@ -102,6 +104,7 @@ const savePet = async pet => {
       onCancel = {() => setCurrentPet(null)}
       onSave={savePet} />
     )}
+    
     </main>
   )
 }
